@@ -1,0 +1,34 @@
+name: 'EddieHubCommunity labels Action'
+description: 'Import open source issue labels standards'
+inputs:
+  github-token:
+    description: 'GitHub token for repo'
+    required: true
+  owner-name:
+    description: 'Owner name is user or organisation'
+    required: true
+  repository-name:
+    description: 'GitHub repo name'
+    required: true
+  force:
+    description: 'Clear existing labels first'
+    default: true
+runs:
+  using: "composite"
+  steps:
+    - name: 'install dependency'
+      run: npm install github-label-template
+      shell: bash
+    - name: 'delete existing labels'
+      run: |
+        [[ ${{ inputs.force }} = true ]] && npx ghlbl -o ${{ inputs.owner-name }} -r ${{ inputs.repository-name }} -t ${{ inputs.github-token }} -d
+        if [ -z "${{ inputs.force }}" ]
+        then
+          npx ghlbl -o ${{ inputs.owner-name }} -r ${{ inputs.repository-name }} -t ${{ inputs.github-token }} -d
+        else
+          echo -e "Existing labels not removed"
+        fi
+      shell: bash
+    - name: 'import labels from json file'
+      run: npx ghlbl -o ${{ inputs.owner-name }} -r ${{ inputs.repository-name }} -t ${{ inputs.github-token }} -i ${{ github.action_path }}/labels.json
+      shell: bash
