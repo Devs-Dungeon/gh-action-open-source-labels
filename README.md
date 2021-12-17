@@ -24,7 +24,7 @@ jobs:
     - uses: actions/setup-node@v2
       with:
         node-version: '14'
-    - uses: EddieHubCommunity/gh-action-open-source-labels@main
+    - uses: Devs-Dungeon/gh-action-open-source-labels@main
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         owner-name: ${{ github.repository_owner }}
@@ -63,7 +63,14 @@ To add a new label, update the `labels.json` file and the GitHub Action will do 
 
 > This example shows two common ways to add a label. One without emoji and the other with emoji. The preferred way is using emojis at the beginning, but there are also some labels which are commonly used without emojis.
 
-## Socials
+## 🔗 Connect with Us
+[<img align="left" alt="Subham | Mail" width="80px" src="https://img.shields.io/badge/-Gmail-000000?logo=gmail&Color=0A66C2&style=flat-square" />][mail]
+[<img align="left" alt="Subham | LinkedIn" width="100px" src="https://img.shields.io/badge/-LinkedIn-000000?logo=linkedin&Color=0A66C2&style=flat-square" />][linkedin]
+[<img align="left" alt="Subham | Discord" width="92px" src="https://img.shields.io/badge/-Twitter-000000?logo=twitter&Color=0A66C2&style=flat-square" />][twitter]
+[<img align="left" alt="Subham | Discord" width="92px" src="https://img.shields.io/badge/-Discord-000000?logo=discord&Color=0A66C2&style=flat-square" />][discord]
 
-Join our Discord community [here](http://discord.eddiehub.org)   
-Subscribe our YouTube channel [here](https://www.youtube.com/user/eddiejaoude)
+[mail]: mailto:devs.dungeon.community@gmail.com
+[linkedin]: https://www.linkedin.com/company/devs-dungeon/
+[twitter]: https://twitter.com/devs_dungeon
+[discord]: https://discord.gg/ceMXzhfaka
+
