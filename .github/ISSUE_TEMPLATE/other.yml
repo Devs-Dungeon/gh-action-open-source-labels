@@ -22,7 +22,7 @@ body:
       required: false
   - type: markdown
     attributes:
-    value: |
+      value: |
         Join our Discord Community [here](https://discord.gg/ceMXzhfaka)
         Follow us on LinkedIn [here](https://www.linkedin.com/company/devs-dungeon)
         Follow us on Twitter [here](https://twitter.com/devs_dungeon)
