@@ -7,13 +7,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EddieHubCommunity/gh-action-open-source-labels.git"
+    "url": "git+https://github.com/Devs-Dungeon/gh-action-open-source-labels.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/EddieHubCommunity/gh-action-open-source-labels/issues"
+    "url": "https://github.com/Devs-Dungeon/gh-action-open-source-labels/issues"
   },
-  "homepage": "https://github.com/EddieHubCommunity/gh-action-open-source-labels#readme"
+  "homepage": "https://github.com/Devs-Dungeon/gh-action-open-source-labels#readme"
 }
