@@ -1,4 +1,4 @@
-name: 'EddieHubCommunity labels Action'
+name: 'DEVs Dungeon labels Action'
 description: 'Import open source issue labels standards'
 inputs:
   github-token:
